@@ -1,6 +1,58 @@
-<nav>
-  <a routerLink="/reservations">Reservations</a>
-  <a routerLink="/create">Add Reservation</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
 
-<router-outlet></router-outlet>
+    .container {
+      max-width: 900px;
+      padding: 2rem;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      margin: 0 1rem;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s;
+    }
+
+    a:hover {
+      color: #007bff;
+      border-bottom-color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a routerLink="/reservations">Reservations</a>
+      <a routerLink="/create">Add Reservation</a>
+    </nav>
+
+    <router-outlet></router-outlet>
+  </div>
+</body>
+</html>

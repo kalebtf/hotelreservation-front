@@ -8,6 +8,9 @@ import { ReservationDetailsComponent } from './reservation-details/reservation-d
 import { ReservationCreateComponent } from './reservation-create/reservation-create.component';
 import { ReservationUpdateComponent } from './reservation-update/reservation-update.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -21,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
